@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.apps.prog.appprosbackend.AppProsBackEndApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-05-16T00:39:06" hostname="TinkerPeterCheese" time="0.119">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.apps.prog.appprosbackend.AppProsBackEndApplicationTests" time="0.119"/>
+  <system-out><![CDATA[07:39:03.317 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Neither @ContextConfiguration nor @ContextHierarchy found for test class [AppProsBackEndApplicationTests]: using SpringBootContextLoader
+07:39:03.320 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader -- Could not detect default resource locations for test class [com.apps.prog.appprosbackend.AppProsBackEndApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+07:39:03.321 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.apps.prog.appprosbackend.AppProsBackEndApplicationTests]: AppProsBackEndApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+07:39:03.332 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Using ContextCustomizers for test class [AppProsBackEndApplicationTests]: [DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, TestRestTemplateContextCustomizer]
+07:39:03.369 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider -- Identified candidate component class: file [/Users/tinkerpeterchesepeanut/Documents/GitHub/app-pros-back-end/build/classes/kotlin/main/com/apps/prog/appprosbackend/AppProsBackEndApplication.class]
+07:39:03.370 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.apps.prog.appprosbackend.AppProsBackEndApplication for test class com.apps.prog.appprosbackend.AppProsBackEndApplicationTests
+07:39:03.433 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Using TestExecutionListeners for test class [AppProsBackEndApplicationTests]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, EventPublishingTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
+07:39:03.434 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener -- Before test class: class [AppProsBackEndApplicationTests], class annotated with @DirtiesContext [false] with mode [null]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.0.6)
+
+2023-05-16T07:39:03.672+07:00  INFO 12439 --- [    Test worker] c.a.p.a.AppProsBackEndApplicationTests   : Starting AppProsBackEndApplicationTests using Java 17.0.7 with PID 12439 (started by tinkerpeterchesepeanut in /Users/tinkerpeterchesepeanut/Documents/GitHub/app-pros-back-end)
+2023-05-16T07:39:03.675+07:00  INFO 12439 --- [    Test worker] c.a.p.a.AppProsBackEndApplicationTests   : No active profile set, falling back to 1 default profile: "default"
+2023-05-16T07:39:04.142+07:00  INFO 12439 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-16T07:39:04.219+07:00  INFO 12439 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58 ms. Found 4 JPA repository interfaces.
+2023-05-16T07:39:04.573+07:00  INFO 12439 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-16T07:39:04.904+07:00  INFO 12439 --- [    Test worker] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (null)
+2023-05-16T07:39:04.959+07:00  INFO 12439 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection net.sourceforge.jtds.jdbc.JtdsConnection@7186b202
+2023-05-16T07:39:04.960+07:00  INFO 12439 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-16T07:39:04.985+07:00  INFO 12439 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-16T07:39:05.013+07:00  INFO 12439 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-05-16T07:39:05.176+07:00  INFO 12439 --- [    Test worker] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+2023-05-16T07:39:05.540+07:00  INFO 12439 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-16T07:39:05.543+07:00  INFO 12439 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-16T07:39:06.420+07:00  WARN 12439 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-16T07:39:06.713+07:00  INFO 12439 --- [    Test worker] c.a.p.a.AppProsBackEndApplicationTests   : Started AppProsBackEndApplicationTests in 3.237 seconds (process running for 3.922)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

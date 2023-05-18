@@ -1,10 +1,7 @@
 package com.apps.prog.appprosbackend.api.features.task_manager.controller
 
 import com.apps.prog.appprosbackend.api.common.ApiResponse
-import com.apps.prog.appprosbackend.api.features.authentication.User
-import com.apps.prog.appprosbackend.api.features.task_manager.model.AssignTaskRequest
-import com.apps.prog.appprosbackend.api.features.task_manager.model.Task
-import com.apps.prog.appprosbackend.api.features.task_manager.model.TaskDto
+import com.apps.prog.appprosbackend.api.features.task_manager.model.request.AssignTaskRequest
 import com.apps.prog.appprosbackend.api.features.task_manager.service.TaskAssignService
 import org.slf4j.LoggerFactory
 import org.springframework.http.HttpStatus
@@ -37,11 +34,10 @@ class TaskAssignController(private val service: TaskAssignService) {
     @PostMapping("/assign")
     fun assignTask(
         @RequestBody assignTaskRequest: AssignTaskRequest,
-    ): ResponseEntity<ApiResponse<Any>> {
+    ): ResponseEntity<Any> {
         return try {
             val taskResult = service.assignTask(assignTaskRequest.task, assignTaskRequest.user)
-            val response = ApiResponse<Any>(HttpStatus.OK.value(), "Task assigned successfully", taskResult)
-            ResponseEntity.ok(response)
+            ResponseEntity.ok(taskResult)
         } catch (e: IllegalArgumentException) {
             logger.error(e.localizedMessage)
             val response = ApiResponse<Any>(HttpStatus.BAD_REQUEST.value(), e.message ?: "Failed to assigned Task")

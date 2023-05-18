@@ -2,7 +2,7 @@ package com.apps.prog.appprosbackend.api.features.task_manager.repository
 
 import com.apps.prog.appprosbackend.api.features.task_manager.model.TaskAssignment
 import com.apps.prog.appprosbackend.api.features.task_manager.model.TaskAssignmentId
-import com.apps.prog.appprosbackend.api.features.task_manager.model.TaskDto
+import com.apps.prog.appprosbackend.api.features.task_manager.model.dto.TaskDto
 import org.springframework.data.jpa.repository.JpaRepository
 import org.springframework.data.jpa.repository.Query
 import org.springframework.stereotype.Repository
@@ -11,7 +11,7 @@ import org.springframework.stereotype.Repository
 interface TaskAssignRepository : JpaRepository<TaskAssignment, TaskAssignmentId> {
 
     @Query(
-        "SELECT NEW com.apps.prog.appprosbackend.api.features.task_manager.model.TaskDto("
+        "SELECT NEW com.apps.prog.appprosbackend.api.features.task_manager.model.dto.TaskDto("
                 + "ta.task.id, "
                 + "ta.task.title, "
                 + "ta.task.description, "

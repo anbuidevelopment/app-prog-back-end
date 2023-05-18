@@ -4,7 +4,7 @@ import com.apps.prog.appprosbackend.api.features.authentication.User
 import com.apps.prog.appprosbackend.api.features.task_manager.model.Status
 import com.apps.prog.appprosbackend.api.features.task_manager.model.Task
 import com.apps.prog.appprosbackend.api.features.task_manager.model.TaskAssignment
-import com.apps.prog.appprosbackend.api.features.task_manager.model.TaskDto
+import com.apps.prog.appprosbackend.api.features.task_manager.model.dto.TaskDto
 import com.apps.prog.appprosbackend.api.features.task_manager.repository.TaskAssignRepository
 import org.springframework.stereotype.Service
 

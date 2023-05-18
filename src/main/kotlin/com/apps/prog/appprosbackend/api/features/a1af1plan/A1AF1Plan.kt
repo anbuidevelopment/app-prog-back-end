@@ -14,6 +14,8 @@ data class A1AF1Plan(
     val line: String,
     @Column(name = "Sub_No")
     val job: String,
+    @Column(name = "Job_No")
+    val orderNo: String,
     @Column(name = "Style")
     val style: String,
     @Column(name = "Type")

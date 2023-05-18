@@ -1,5 +1,6 @@
-package com.apps.prog.appprosbackend.api.features.task_manager.model
+package com.apps.prog.appprosbackend.api.features.task_manager.model.dto
 
+import com.apps.prog.appprosbackend.api.features.task_manager.model.Status
 import java.time.LocalDate
 import java.time.LocalDateTime
 
