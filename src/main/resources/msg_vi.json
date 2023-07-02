@@ -1,0 +1,4 @@
+{
+  "error_authenticate": "Tài khoản hoặc mật khẩu không chính xác",
+  "error_user_not_found": "Mã ID {0} không được tìm thấy trong hệ thống"
+}

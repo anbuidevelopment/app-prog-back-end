@@ -1,0 +1,4 @@
+{
+  "error_authenticate": "Username or password is not valid",
+  "error_user_not_found": "The ID {0} account could not be found"
+}
