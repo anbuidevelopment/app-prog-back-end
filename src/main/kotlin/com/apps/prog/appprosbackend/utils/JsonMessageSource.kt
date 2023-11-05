@@ -4,6 +4,7 @@ import com.fasterxml.jackson.core.type.TypeReference
 import com.fasterxml.jackson.databind.ObjectMapper
 import org.springframework.context.support.AbstractMessageSource
 import org.springframework.lang.Nullable
+import org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver
 import java.text.MessageFormat
 import java.util.*
 
@@ -22,6 +23,7 @@ class JsonMessageSource : AbstractMessageSource() {
 
     override fun resolveArguments(args: Array<out Any>?, locale: Locale): Array<out Any> {
         // Convert any non-string arguments to strings before resolving
+        println(locale.toString())
         return args?.map { it.toString() }?.toTypedArray() ?: emptyArray()
     }
 }

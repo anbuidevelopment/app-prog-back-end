@@ -1,4 +1,7 @@
 {
   "error_authenticate": "Tài khoản hoặc mật khẩu không chính xác",
-  "error_user_not_found": "Mã ID {0} không được tìm thấy trong hệ thống"
+  "error_change_password": "Mật khẩu cũ không chính xác",
+  "error_user_not_found": "Mã ID {0} không được tìm thấy trong hệ thống",
+  "error_create_task": "Tạo công việc thất bại, vui lòng kiểm tra lại thông tin",
+  "notify_create_task": "Bạn đã được giao công việc {0}, vui lòng kiếm tra ngay"
 }
