@@ -23,7 +23,7 @@ class WebConfig : WebMvcConfigurer {
 class WebClientConfig {
     @Bean
     fun webClient(): WebClient {
-        return WebClient.create("http://localhost:3000")
+        return WebClient.create("http://localhost:8080")
     }
 
 }

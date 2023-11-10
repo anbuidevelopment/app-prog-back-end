@@ -3,5 +3,7 @@
   "error_change_password": "Mật khẩu cũ không chính xác",
   "error_user_not_found": "Mã ID {0} không được tìm thấy trong hệ thống",
   "error_create_task": "Tạo công việc thất bại, vui lòng kiểm tra lại thông tin",
-  "notify_create_task": "Bạn đã được giao công việc {0}, vui lòng kiếm tra ngay"
+  "notify_create_task": "Bạn đã được giao công việc {0}, vui lòng kiếm tra ngay",
+  "problem_submit_error" : "Lỗi xảy ra trong quá trình xử lý yêu cầu: Vui lòng nhập đầy đủ thông tin trước khi gửi"
+
 }

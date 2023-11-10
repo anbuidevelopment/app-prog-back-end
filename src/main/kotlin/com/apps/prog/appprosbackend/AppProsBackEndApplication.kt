@@ -11,6 +11,7 @@ import org.springframework.context.annotation.Configuration
 import org.springframework.core.io.ResourceLoader
 import org.springframework.scheduling.annotation.EnableAsync
 import org.springframework.scheduling.annotation.EnableScheduling
+import org.springframework.web.client.RestTemplate
 import java.io.FileInputStream
 import java.io.IOException
 

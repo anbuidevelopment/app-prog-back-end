@@ -3,5 +3,6 @@
   "error_change_password": "Old Password is not valid",
   "error_user_not_found": "The ID {0} account could not be found",
   "error_create_task": "Failed to create task, please check the information again.",
-  "notify_create_task": "You have been assigned the task {0}, please check it promptly."
+  "notify_create_task": "You have been assigned the task {0}, please check it promptly.",
+  "problem_submit_error" : "An error occurred while processing your request. Please enter all fields before submitting"
 }

@@ -7,13 +7,16 @@ import com.apps.prog.appprosbackend.api.features.lms.problem.model.request.Probl
 import com.apps.prog.appprosbackend.api.features.lms.problem.repository.*
 import com.apps.prog.appprosbackend.api.features.lms.task_manager.TaskService
 import com.apps.prog.appprosbackend.config.WebClientConfig
+import com.apps.prog.appprosbackend.utils.ErrorConstants
 import com.apps.prog.appprosbackend.utils.formatToString
+import com.apps.prog.appprosbackend.utils.getMsg
 import com.apps.prog.appprosbackend.utils.parseDate
 import com.google.gson.Gson
 import kotlinx.coroutines.async
 import kotlinx.coroutines.reactive.awaitLast
 import kotlinx.coroutines.runBlocking
 import org.slf4j.LoggerFactory
+import org.springframework.context.MessageSource
 import org.springframework.data.jpa.domain.AbstractPersistable_.id
 import org.springframework.stereotype.Service
 import java.text.SimpleDateFormat
@@ -28,7 +31,8 @@ class ProblemService(
     private val problemTicketResp: ProblemTicketResp,
     private val problemTicketReasonResp: ProblemTicketReasonResp,
     private val problemTicketSolutionResp: ProblemTicketSolutionResp,
-    private val webClientConfig: WebClientConfig
+    private val messageSource: MessageSource,
+    private val webClientConfig: WebClientConfig,
 ) {
     private val logger = LoggerFactory.getLogger(TaskService::class.java)
 
@@ -101,7 +105,7 @@ class ProblemService(
             }
         } catch (ex: Exception) {
             logger.error("Error in saveForm: ${ex.message}", ex)
-            throw AppException("Error while processing the request ${ex.message}")
+            throw AppException(message = messageSource.getMsg(ErrorConstants.ERROR_PROBLEM_SUBMIT))
         }
     }
 
